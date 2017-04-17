@@ -4,49 +4,90 @@
 	<meta charset="UTF-8">
 	<title>Display</title>
 	<style type="text/css">
-	.galery {
-		border: 1px solid;
-		padding: 10px;
-		text-align: center;
-								
-	}
+
+
+body {
+	margin: 0px;
+	padding:0px;
+	font-size: 62.5%;	
+    font-family: 'Raleway', sans-serif;	
+    color: #FFF;
+    background-color: #1C1905;
+
+}
+
+.navbar {
+	border: solid 1px #000; 
+	width: 100%;
+	background-color: #C93C26
+}	
+
+.navbar ul {
+	list-style-type: none;
+	margin-left: 0;
+	
+}
+	
+.navbar li {
+  	display: inline-block;
+	margin-right: 40px; 
+	border-bottom: 1px solid;
+}	
+
+.navbar a {
+	font-size: 2em;
+	text-decoration: none;
+	color: #fff;
+}
+
+.galery {
+	border: 1px solid;
+	padding: 10px;
+	text-align: center;
+}
 
 	
-	.photo  {
-		width: 240px;	
-		display: inline-block;		
-		border: solid 1px;	
-		text-align: center;			
-	}
+.photo  {
+	width: 240px;	
+	display: inline-block;		
+	border: solid 1px;	
+	text-align: center;			
+}
 
-	.photo img {
-		height: 220px;
-		width: 220px;
-		margin-left: 10px;	
-		background-color: transparent;
+.photo img {
+	height: 220px;
+	width: 220px;
+	margin-left: 10px;	
+	background-color: transparent;
 
-			
-	}
+}
 
-	
-		
-	.photo a {
-		float: right;
-		text-decoration: none;			
-        color: #000; 
-	}	
+.photo a {
+	float: right;
+	text-decoration: none;			
+    color: #000; 
+}	
 		
 
 	</style>
 	</head>
 
 	<body>
+	<nav class="navbar">
+	<ul>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Pandas</a></li>
+		<li><a href="#">Historia</a></li>
+		<li><a href="#">Extincion</a></li>
+	</ul>
 		
+	</nav>
+
 	<div class="galery">
 		
 		<div class="photo">	
 			<a href="#">x</a>
-			<img src="uno.jpg" alt="panda1">
+			<img src="assets/images/1.jpg" alt="panda1">
 		</div>
 
 		<div class="photo">	
