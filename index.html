@@ -48,6 +48,7 @@ body {
 
 	
 .photo  {
+	background-color: #575757;
 	width: 240px;	
 	display: inline-block;		
 	border: solid 1px;	
@@ -57,18 +58,35 @@ body {
 .photo img {
 	height: 220px;
 	width: 220px;
-	margin-left: 10px;	
-	background-color: transparent;
+	margin-left: 2px;	
+	
 
 }
 
 .photo a {
-	float: right;
+	float: left;
 	text-decoration: none;			
     color: #000; 
-}	
-		
+    font-size: 2em;
+ 
+}
 
+
+#btn-info {
+	margin-top: 10px;
+	text-align: center;
+}
+
+		
+#btn-info a {
+	margin-right: 40px;
+	width: 170px; 
+	font-size: 2em;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #C93C26;
+}
 	</style>
 	</head>
 
@@ -78,7 +96,7 @@ body {
 		<li><a href="#">Inicio</a></li>
 		<li><a href="#">Pandas</a></li>
 		<li><a href="#">Historia</a></li>
-		<li><a href="#">Extincion</a></li>
+		<li><a href="#">Extinción</a></li>
 	</ul>
 		
 	</nav>
@@ -92,21 +110,28 @@ body {
 
 		<div class="photo">	
 		 	<a href="#">x</a>	
-			<img src="2.jpg" alt="panda2">
+			<img src="assets/images/2.jpg" alt="panda2">
 		</div>
 		
 		<div class="photo">	
 			<a href="#">x</a>
-			<img src="3.jpg" alt="panda3">
+			<img src="assets/images/3.jpg" alt="panda3">
 		</div>
 
 		<div class="photo">	
 			<a href="#">x</a>
-			<img src="3.jpg" alt="panda3">
+			<img src="assets/images/4.jpg" alt="panda3">
 		</div>
-
-
 	</div>
+
+	<section id="btn-info">
+		<a href="#">Origen</a>
+		<a href="#">Extinción</a>
+		<a href="#">Restaurar Fotos</a>
+	</section>
+
+
+	
 		<p>	orem ipsum dolor sit amet, consectetur adipisicing elit. Laborum est eos accusantium molestias magnam similique, totam, eveniet rem facilis minima dolorem unde ea dolores dolor. Eligendi, iure beatae non qui!s</p>
 	<script src="apps.js"></script>		
 	</body>
