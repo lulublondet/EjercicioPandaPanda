@@ -39,8 +39,13 @@
 		}
 
 		.galery {
+			display: block;
 			margin-top: 5px;
 
+		}
+
+		.show {
+			display: block;
 		}
 		
 		.photo {
@@ -101,6 +106,8 @@
 			color:#FFF;
 		}
 
+	
+
 		#main {
 			
 			margin-left: 100px;
@@ -137,24 +144,24 @@
 		</ul>
 	</nav>
 
-	<div class="galery">
+	<div class="galery" id="galery">
 		
-		<div class="photo" id="js-photo-1">	
+		<div class="photo">	
 			<a href="#" class="close">&#10006;</a>
 			<img src="assets/images/1.jpg" alt="panda1">
 		</div>
 
-		<div class="photo" id="js-photo-2">	
+		<div class="photo">	
 		 	<a href="#" class="close">&#10006;</a>	
 			<img src="assets/images/2.jpg" alt="panda2">
 		</div>
 		
-		<div class="photo" id="js-photo-3">	
+		<div class="photo">	
 			<a href="#" class="close">&#10006;</a>
 			<img src="assets/images/3.jpg" alt="panda3">
 		</div>
 
-		<div class="photo" id="js-photo-4">	
+		<div class="photo">	
 			<a href="#" class="close">&#10006;</a>
 			<img src="assets/images/4.jpg" alt="panda4">
 		</div>
@@ -164,7 +171,7 @@
 	<ul id="infoNav">
 		<li><a href="#" id="js-btn-show">Origen</a></li>
 		<li><a href="#" id="js-btn-hidden">Extinción</a></li>
-		<li><a href="#" id="js-btn-restore">Restaurar Fotos</a></li>
+		<li id="js-btn-restore"><a href="#" class="restore">Restaurar Fotos</a></li>
 	</ul>
 	
 	<main id="main">
