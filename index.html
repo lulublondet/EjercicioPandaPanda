@@ -2,163 +2,182 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Display</title>
+	<title>PandasPandas</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 	<style type="text/css">
 
+	 	 #mainNav {
+			
+			background-color: #CA3C25;
+			padding-top: 5px;
+			padding-bottom: 5px;
 
-body {
-	margin: 0px;
-	padding:0px;
-	font-size: 62.5%;	
-    font-family: 'Raleway', sans-serif;	
-    color: #FFF;
-    background-color: #1C1905;
+	 	 }
+		
+		#mainNav ul {
+			margin-left: 100px;
+			padding-left: 0px;
+			list-style-type: none;
+			overflow: hidden;
+		}
 
-}
-
-.navbar {
-	border: solid 1px #000; 
-	width: 100%;
-	background-color: #C93C26
-}	
-
-.navbar ul {
-	list-style-type: none;
-	margin-left: 0;
-	
-}
-	
-.navbar li {
-  	display: inline-block;
-	margin-right: 40px; 
-	border-bottom: 1px solid;
-}	
-
-.navbar a {
-	font-size: 2em;
-	text-decoration: none;
-	color: #fff;
-}
-
-.galery {
-	padding: 10px;
-	text-align: center;
-}
+		#mainNav li {
+				float: left;
 
 	
-.photo  {
-	background-color: #575757;
-	width: 240px;	
-	display: inline-block;		
-	border: solid 1px;	
-	text-align: center;			
-}
+		}
 
-.photo img {
-	height: 220px;
-	width: 220px;
-	margin-left: 2px;	
-	
+		#mainNav a {
+			display: block;
+			padding: 5px;
+			margin-right: 5px;
+			text-align: center;
+			color: #FFF;
+			font-size: 1.5em;
 
-}
+		}
 
-.photo a {
-	float: left;
-	text-decoration: none;			
-    color: #000; 
-    font-size: 2em;
- 
-}
+		.galery {
+			margin-top: 5px;
 
+		}
+		
+		.photo {
+			
+			float: left;
+			width: 150px;
+			text-align: center;
+			margin-left: 28px;
+			
 
-#btn-info {
-	margin-top: 10px;
-	text-align: center;
-}
+		}
+		.photo img{
+			position: relative;
+			border: 5px solid #575757;
+			width: 150px;
+			height: 150px;
+			filter: grayscale(100%);
+			-webkit-filter : grayscale(100%);
+			left:75px;
+
+		}
+
+		.close {
+				position: relative; 
+				text-decoration: none;
+				float:left;
+				margin: 0;
+				left: 84px;
+				top:25px;
+				z-index: 3;
+				font-size: 1.3em;
+				color:#FFF;
+			}
+
+		ul#infoNav {
+			padding-top: 15px;
+			list-style-type: none; 
+			clear: both;
+			overflow: hidden;
+			padding-left: 100px;
+			padding-bottom: 40px;
+		}
+
+		ul#infoNav li {
+			float: left;
+		}
 
 		
-#btn-info a {
-	margin-right: 40px;
-	width: 300px; 
-	font-size: 2em;
-	color: white;
-	text-decoration: none;
-	display: inline-block;
-	background-color: #C93C26;
-}
+		ul#infoNav a{
+			display: block;
+			padding: 5px;
+			text-decoration: none;
+			text-align: center;
+			margin-right: 10px;
+			background-color: #CA3C25;
+			width: 215px;
+			font-size: 1.5em;
+			color:#FFF;
+		}
+
+		#main {
+			
+			margin-left: 100px;
+			padding:0px;
 
 
-#main {
-	margin-left: 130px;
-	margin-top: 20px;
-	width: 100%;
-	font-size: 1.5em;
+		}
+		
+		#main section {
+			
+			display: inline-block;
+			width: 320px;
+			overflow: hidden;
+			margin-right: 10px;
+			text-align: justify;
+			padding-top: 10px;
+			font-size: 1.3em;
+			line-height: 150%;
+			letter-spacing: 0.5px;
+			padding: 10px;
+			color: #fff;
+		}
 	
-}
-
-
-#main section {
-
-	text-align: justify;
-	display: inline-block;
-	width: 400px;
-	margin-left: 80px;
-	padding: 20px;	
-
-}
 	</style>
-	</head>
-
-	<body>
-	<nav class="navbar">
-	<ul>
-		<li><a href="#">Inicio</a></li>
-		<li><a href="#">Pandas</a></li>
-		<li><a href="#">Historia</a></li>
-		<li><a href="#">Extinción</a></li>
-	</ul>
-		
+</head>
+<body>
+	
+	<nav id="mainNav">
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Pandas</a></li>
+			<li><a href="#">Historia</a></li>
+			<li><a href="#">Extinción</a></li>
+		</ul>
 	</nav>
 
 	<div class="galery">
 		
-		<div class="photo">	
-			<a href="#">x</a>
+		<div class="photo" id="js-photo-1">	
+			<a href="#" class="close">&#10006;</a>
 			<img src="assets/images/1.jpg" alt="panda1">
 		</div>
 
-		<div class="photo">	
-		 	<a href="#">x</a>	
+		<div class="photo" id="js-photo-2">	
+		 	<a href="#" class="close">&#10006;</a>	
 			<img src="assets/images/2.jpg" alt="panda2">
 		</div>
 		
-		<div class="photo">	
-			<a href="#">x</a>
+		<div class="photo" id="js-photo-3">	
+			<a href="#" class="close">&#10006;</a>
 			<img src="assets/images/3.jpg" alt="panda3">
 		</div>
 
-		<div class="photo">	
-			<a href="#">x</a>
-			<img src="assets/images/4.jpg" alt="panda3">
+		<div class="photo" id="js-photo-4">	
+			<a href="#" class="close">&#10006;</a>
+			<img src="assets/images/4.jpg" alt="panda4">
 		</div>
+
 	</div>
-
-	<section id="btn-info">
-		<a href="#">Origen</a>
-		<a href="#">Extinción</a>
-		<a href="#">Restaurar Fotos</a>
-	</section>
-
+	
+	<ul id="infoNav">
+		<li><a href="#" id="js-btn-show">Origen</a></li>
+		<li><a href="#" id="js-btn-hidden">Extinción</a></li>
+		<li><a href="#" id="js-btn-restore">Restaurar Fotos</a></li>
+	</ul>
+	
 	<main id="main">
 		<section class="right-section">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam vero aliquid eligendi iure harum eius molestiae voluptatem temporibus quidem laudantium asperiores, reiciendis, consequuntur excepturi iusto labore autem ut atque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam vero aliquid eligendi iure harum eius molestiae voluptatem temporibus quidem laudantium asperiores, reiciendis, consequuntur excepturi iusto labore autem ut atque!</p><br>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa amet voluptatum laboriosam sapiente soluta nesciunt consectetur illo suscipit! Possimus at id quasi nihil ipsum ad minima voluptate iure eius tempore.</p>
 		</section>
 		<section class="left-section">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat at, illo dolores minima reprehenderit, eaque hic atque dolore voluptatibus veniam commodi error est eius, quo! Soluta quis assumenda dolores aut.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat at, illo dolores minima reprehenderit, eaque hic atque dolore voluptatibus veniam commodi error est eius, quo! Soluta quis assumenda dolores aut.</p><br>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto pariatur necessitatibus. Officiis temporibus, optio nostrum saepe eligendi consequuntur, doloremque quo dicta a aliquid, rem fugiat laboriosam eaque. Aspernatur, doloremque.</p>
 		</section>
 	</main>
-	<script src="apps.js"></script>		
+	
+	<script src="assets/js/apps.js"></script>		
 	</body>
 	</html>
