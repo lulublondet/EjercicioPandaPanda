@@ -1,7 +1,6 @@
 
 var imgs = document.querySelectorAll(".photo");
 
-
 imgs.forEach(function(e){
 	e.addEventListener("click", hidden);
 		function hidden(){
@@ -10,18 +9,28 @@ imgs.forEach(function(e){
 	})
 
 
-var li = document.getElementById("js-btn-restore");
-li.addEventListener("click", restore);
+var liRestore = document.getElementById("js-btn-restore");
 
-function restore() {
- imgs.forEach(function(e){
- 	e.style.display="block";
- })
+liRestore.addEventListener("click", restore);
 
-}
+	function restore() {
+ 		imgs.forEach(function(e){
+ 			e.style.display="block";
+ 		})
+ 	}
+
+var btOrigen = document.getElementById("js-btn-origen");
+	btOrigen.addEventListener("click", hideSectionLeft)
+  		function hideSectionLeft(){
+  			document.getElementById("js-right-section").style.visibility = "hidden";
+  		}
 
 
-
+var btExtinsion = document.getElementById("js-btn-extinsion");
+	btExtinsion.addEventListener("click", hideSectionRight)
+		function hideSectionRight(){
+			document.getElementById("js-left-section").style.visibility="hidden";
+		}
 
 
 
