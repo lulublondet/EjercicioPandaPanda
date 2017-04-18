@@ -22,7 +22,7 @@ liRestore.addEventListener("click", restore);
 var btOrigen = document.getElementById("js-btn-origen");
 	btOrigen.addEventListener("click", hideSectionLeft)
   		function hideSectionLeft(){
-  			document.getElementById("js-right-section").style.visibility = "hidden";
+  		document.getElementById("js-right-section").style.visibility = "hidden" ;
   		}
 
 
